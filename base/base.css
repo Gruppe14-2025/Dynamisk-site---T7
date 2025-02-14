@@ -13,13 +13,14 @@ main {
 .menupunkter {
   list-style-type: none;
   display: flex;
-  justify-content: left;
-  gap: 13%;
+  justify-content: center;
+  text-align: center;
+  gap: 10%;
   font-family: "Inter";
   font-weight: 300;
-  padding-left: 10%;
   line-height: 20%;
   font-size: 85%;
+  padding: 0;
 }
 
 .menulinje {
@@ -32,5 +33,7 @@ main {
   .menupunkter {
     gap: 5%;
     font-size: 100%;
+    justify-content: left;
+    padding-left: 10%;
   }
 }
