@@ -1,0 +1,36 @@
+body,
+main {
+  margin: 0;
+  padding: 0;
+  background-color: #fefcdd;
+}
+
+.menupunkt {
+  color: white;
+  text-decoration: none;
+}
+
+.menupunkter {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  gap: 13%;
+  font-family: "Inter";
+  font-weight: 300;
+  padding-left: 10%;
+  line-height: 20%;
+  font-size: 85%;
+}
+
+.menulinje {
+  position: fixed;
+  width: 100%;
+  background-color: #b29f4e;
+}
+
+@media (min-width: 768px) {
+  .menupunkter {
+    gap: 5%;
+    font-size: 100%;
+  }
+}
