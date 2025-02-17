@@ -276,4 +276,8 @@ a {
     margin-left: 8%;
     font-size: 110%;
   }
+
+  #Snacks {
+    display: none;
+  }
 }

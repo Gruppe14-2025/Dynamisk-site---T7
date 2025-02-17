@@ -1,12 +1,11 @@
 const productContainer = document.querySelector(".recipe_container");
-
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const productId = urlParams.get("id"); 
+const userId = urlParams.get("userId"); 
 
 console.log(productId);
 
-fetch(`https://dummyjson.com/recipes/${productId}`)
+fetch(`https://dummyjson.com/recipes/1/${userId}`)
   .then((response) => response.json())
   .then((data) => {
     console.log("Fetched Recipe Data:", data);
@@ -27,7 +26,7 @@ productContainer.innerHTML = `
           <div class="ingredients">
             <h2>Ingredients:</h2>
             <ul class="ingredients_list">
-              <li>test</li>
+              <li>Pizza Dough</li>
               <li>Tomato sauce</li>
               <li>Fresh mozzarella cheese</li>
               <li>Fresh basil leaves</li>

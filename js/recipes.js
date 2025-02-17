@@ -3,9 +3,11 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const mealType = urlParams.get("mealType");
 
-console.log(mealType)
 
-fetch(`https://dummyjson.com/recipes?mealType=${mealType}`)
+console.log("mealtype:", mealType);
+
+
+fetch(`https://dummyjson.com/recipes/meal-type/${mealType}`)
 .then((response) => response.json())
 .then((data) => showList(data.recipes));
 
@@ -51,8 +53,8 @@ function showRecipe(data) {
   const markup = [...mealTypes]
     .map(
       (meal) => `
-        <a href="recipes.html?mealType=${meal}">
-          <li>${meal}</li>
+        <a id="${meal}" href="recipes.html?mealType=${meal}">
+          <li >${meal}</li>
         </a>`
     )
     .join("");
