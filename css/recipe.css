@@ -1,0 +1,335 @@
+.overskrift_recipe {
+  margin-top: 0%;
+  padding-top: 12%;
+  font-family: "Bungee";
+  color: #b6391c;
+  text-align: center;
+  font-size: 300%;
+  margin-bottom: 2%;
+}
+
+.recipe_list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 8%;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 85%;
+  padding-left: 0;
+  color: #07542a;
+  margin-top: 5%;
+}
+
+.border {
+  border: solid #b29f4e;
+  background-color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.recipe_card {
+  background-color: #07542a;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 9%;
+}
+
+.recipe_card img {
+  width: 85%;
+}
+
+.recipe_overskift1 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 180%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  padding-left: 3%;
+  color: #b29f4e;
+}
+
+.total_time2 {
+  font-family: "Inter";
+  font-weight: 200;
+  margin-top: 0%;
+  margin-left: 5%;
+  color: white;
+  font-size: 90%;
+  padding-left: 3%;
+}
+
+.ingredients_list {
+  font-family: "Inter";
+  font-weight: 200;
+  color: #3e2b1b;
+  line-height: 180%;
+}
+
+h2 {
+  font-family: "Inter";
+  font-weight: 900;
+  color: #3e2b1b;
+}
+
+.ingredients {
+  padding-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.instructions {
+  font-family: "Inter";
+  font-weight: 200;
+  color: #3e2b1b;
+  line-height: 180%;
+  border: solid #b29f4e;
+  background-color: white;
+  padding: 5%;
+  margin: 5%;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2%;
+  margin-top: 7%;
+}
+
+.card_grid img {
+  width: 85%;
+}
+
+.card_1 {
+  background-color: #07542a;
+  position: relative;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.card_2 {
+  background-color: #ff6b3d;
+  position: relative;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.card_3 {
+  background-color: #b29f4e;
+  position: relative;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.card_4 {
+  background-color: #134592;
+  position: relative;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.card_overskift1 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 150%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #b29f4e;
+}
+
+.card_overskift2 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 150%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #ba241e;
+}
+
+.card_overskift3 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 150%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #07542a;
+}
+
+.card_overskift4 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 150%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #fefcdd;
+}
+
+.total_time {
+  font-family: "Inter";
+  font-weight: 200;
+  margin-bottom: 18%;
+  margin-top: 0%;
+  margin-left: 5%;
+  color: white;
+  font-size: 90%;
+}
+
+.popular_recipes {
+  padding-top: 5%;
+  font-family: "Bungee";
+  color: #b6391c;
+  text-align: center;
+  font-size: 260%;
+  margin-bottom: 2%;
+}
+
+@media (min-width: 768px) {
+  .overskrift_recipe {
+    padding-top: 5%;
+    font-size: 550%;
+  }
+
+  .recipe_list {
+    gap: 5%;
+    font-weight: 700;
+    font-size: 110%;
+    margin-top: 3%;
+  }
+
+  .border {
+    border: solid #b29f4e;
+    background-color: white;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .grid_recipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .recipe_card {
+    background-color: #07542a;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+  }
+
+  .recipe_overskift1 {
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 250%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    color: #b29f4e;
+    padding-left: 3%;
+  }
+
+  .total_time2 {
+    font-family: "Inter";
+    font-weight: 200;
+    margin-top: 0%;
+    margin-left: 5%;
+    color: white;
+    font-size: 120%;
+    padding-left: 3%;
+  }
+
+  .ingredients_list {
+    font-family: "Inter";
+    font-weight: 200;
+    color: #3e2b1b;
+    line-height: 200%;
+    font-size: 120%;
+  }
+
+  .ingredients {
+    padding-left: 10%;
+    margin-top: 15%;
+  }
+
+  h2 {
+    font-family: "Inter";
+    font-weight: 900;
+    color: #3e2b1b;
+    font-size: 200%;
+  }
+
+  .instructions {
+    padding: 2%;
+    margin: 5%;
+  }
+
+  .instructions_list {
+    font-size: 120%;
+    line-height: 200%;
+  }
+
+  .card_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1%;
+    margin-top: 2%;
+  }
+
+  .popular_recipes {
+    padding-top: 1%;
+
+    font-size: 400%;
+    margin-bottom: 2%;
+  }
+
+  .card_overskift1 {
+    font-size: 220%;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 3%;
+  }
+
+  .card_overskift2 {
+    font-size: 220%;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 3%;
+  }
+
+  .card_overskift3 {
+    font-size: 220%;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 3%;
+  }
+
+  .card_overskift4 {
+    font-size: 220%;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-right: 3%;
+  }
+
+  .total_time {
+    margin-bottom: 20%;
+    margin-top: 1%;
+    margin-left: 8%;
+    font-size: 110%;
+  }
+}
