@@ -72,27 +72,33 @@
   line-height: 180%;
 }
 
-h2 {
-  font-family: "Inter";
-  font-weight: 900;
-  color: #3e2b1b;
-}
-
 .ingredients {
   padding-left: 20%;
   margin-top: 10%;
   margin-bottom: 10%;
 }
 
-.instructions {
+.ingredients h2 {
   font-family: "Inter";
-  font-weight: 200;
+  font-weight: 900;
   color: #3e2b1b;
+}
+
+.instructions {
   line-height: 180%;
   border: solid #b29f4e;
   background-color: white;
   padding: 5%;
   margin: 5%;
+  font-family: "Inter";
+  color: #3e2b1b;
+  font-weight: 200;
+}
+
+.instructions h2 {
+  font-family: "Inter";
+  font-weight: 900;
+  color: #3e2b1b;
 }
 
 .card_grid {
@@ -267,7 +273,7 @@ h2 {
     margin-top: 15%;
   }
 
-  h2 {
+  .ingredients h2 {
     font-family: "Inter";
     font-weight: 900;
     color: #3e2b1b;
@@ -277,6 +283,13 @@ h2 {
   .instructions {
     padding: 2%;
     margin: 5%;
+  }
+
+  .instructions h2 {
+    font-family: "Inter";
+    font-weight: 900;
+    color: #3e2b1b;
+    font-size: 200%;
   }
 
   .instructions_list {
