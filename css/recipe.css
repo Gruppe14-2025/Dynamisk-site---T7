@@ -31,16 +31,38 @@
   padding-right: 3%;
 }
 
-.recipe_card {
+.recipe_card1 img {
+  width: 85%;
+}
+
+.recipe_card2 img {
+  width: 85%;
+}
+.recipe_card3 img {
+  width: 85%;
+}
+.recipe_card4 img {
+  width: 85%;
+}
+.recipe_card5 img {
+  width: 85%;
+}
+.recipe_card6 img {
+  width: 85%;
+}
+.recipe_card7 img {
+  width: 85%;
+}
+.recipe_card8 img {
+  width: 85%;
+}
+
+.recipe_card1 {
   background-color: #07542a;
   margin-top: 10%;
   margin-left: 15%;
   margin-right: 15%;
   padding-bottom: 9%;
-}
-
-.recipe_card img {
-  width: 85%;
 }
 
 .recipe_overskift1 {
@@ -53,6 +75,146 @@
   margin-bottom: 1%;
   padding-left: 3%;
   color: #b29f4e;
+}
+
+.recipe_card2 {
+  background-color: #ff6b3d;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 9%;
+}
+
+.recipe_overskift2 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 250%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #ba241e;
+  padding-left: 3%;
+}
+
+.recipe_card3 {
+  background-color: #b29f4e;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 9%;
+}
+
+.recipe_overskift3 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 250%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #07542a;
+  padding-left: 3%;
+}
+
+.recipe_card4 {
+  background-color: #134592;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 9%;
+}
+
+.recipe_overskift4 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 250%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #fefcdd;
+  padding-left: 3%;
+}
+
+.recipe_card5 {
+  background-color: #ba241e;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 9%;
+}
+
+.recipe_overskift5 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 250%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #ff6b3d;
+  padding-left: 3%;
+}
+
+.recipe_card6 {
+  background-color: #e7dac4;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 9%;
+}
+
+.recipe_overskift6 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 250%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #3e2b1b;
+  padding-left: 3%;
+}
+
+.recipe_card7 {
+  background-color: #3e2b1b;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 9%;
+}
+
+.recipe_overskift7 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 250%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #e7dac4;
+  padding-left: 3%;
+}
+
+.recipe_card8 {
+  background-color: #f2991b;
+  margin-top: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 9%;
+}
+
+.recipe_overskift8 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 250%;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  color: #ba241e;
+  padding-left: 3%;
 }
 
 .total_time2 {
@@ -206,7 +368,7 @@
 @media (min-width: 768px) {
   .overskrift_recipe {
     padding-top: 5%;
-    font-size: 550%;
+    font-size: 500%;
   }
 
   .recipe_list {
@@ -230,7 +392,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .recipe_card {
+  .recipe_card1 {
     background-color: #07542a;
     margin-top: 10%;
     margin-left: 25%;
@@ -247,6 +409,146 @@
     margin-right: 2%;
     margin-bottom: 1%;
     color: #b29f4e;
+    padding-left: 3%;
+  }
+
+  .recipe_card2 {
+    background-color: #ff6b3d;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+  }
+
+  .recipe_overskift2 {
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 250%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    color: #ba241e;
+    padding-left: 3%;
+  }
+
+  .recipe_card3 {
+    background-color: #b29f4e;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+  }
+
+  .recipe_overskift3 {
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 250%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    color: #07542a;
+    padding-left: 3%;
+  }
+
+  .recipe_card4 {
+    background-color: #134592;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+  }
+
+  .recipe_overskift4 {
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 250%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    color: #fefcdd;
+    padding-left: 3%;
+  }
+
+  .recipe_card5 {
+    background-color: #ba241e;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+  }
+
+  .recipe_overskift5 {
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 250%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    color: #ff6b3d;
+    padding-left: 3%;
+  }
+
+  .recipe_card6 {
+    background-color: #e7dac4;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+  }
+
+  .recipe_overskift6 {
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 250%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    color: #3e2b1b;
+    padding-left: 3%;
+  }
+
+  .recipe_card7 {
+    background-color: #3e2b1b;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+  }
+
+  .recipe_overskift7 {
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 250%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    color: #e7dac4;
+    padding-left: 3%;
+  }
+
+  .recipe_card8 {
+    background-color: #f2991b;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+  }
+
+  .recipe_overskift8 {
+    font-family: "Inter";
+    font-weight: 900;
+    font-size: 250%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    color: #ba241e;
     padding-left: 3%;
   }
 
