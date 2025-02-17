@@ -27,6 +27,7 @@ main {
   position: fixed;
   width: 100%;
   background-color: #b29f4e;
+  z-index: 1000;
 }
 
 @media (min-width: 768px) {
