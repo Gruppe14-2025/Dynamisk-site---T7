@@ -1,52 +1,49 @@
 const productContainer = document.querySelector(".recipe_container");
-
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const productId = urlParams.get("id"); 
+const userId = urlParams.get("id"); 
 
-console.log(productId);
+console.log(userId);
 
-fetch(`https://dummyjson.com/recipes/${productId}`)
+fetch(`https://dummyjson.com/recipes/${userId}`)
   .then((response) => response.json())
   .then((data) => {
     console.log("Fetched Recipe Data:", data);
 
+    function getRandomCardNumber() {
+      return Math.floor(Math.random() * 8) + 1;
+    }
+
+    const number = getRandomCardNumber()
+
 productContainer.innerHTML = `
         <h1 class="overskrift_recipe">${data.name}</h1>
         <ul class="recipe_list">
-          <li class="border"> ${data.servings} </li>
-          <li class="border">${data.prepTimeMinutes}</li>
-          <li class="border">${data.cookTimeMinutes}</li>
+          <li class="border"> Servings: ${data.servings} </li>
+          <li class="border"> Prep-time: ${data.prepTimeMinutes}</li>
+          <li class="border">Cook-time: ${data.cookTimeMinutes}</li>
         </ul>
         <div class="grid_recipe">
-          <article class="recipe_card">
+          <article class="recipe_card${number}">
             <img src="https://cdn.dummyjson.com/recipe-images/${data.id}.webp" alt="Pizza" class="card_picture" />
-            <h1 class="recipe_overskift1">${data.name}</h1>
+            <h1 class="recipe_overskift${number}">${data.name}</h1>
             <p class="total_time2">Total time: ${data.prepTimeMinutes + data.cookTimeMinutes}</p>
           </article>
           <div class="ingredients">
             <h2>Ingredients:</h2>
-            <ul class="ingredients_list">
-              <li>test</li>
-              <li>Tomato sauce</li>
-              <li>Fresh mozzarella cheese</li>
-              <li>Fresh basil leaves</li>
-              <li>Olive oil</li>
-              <li>Salt and pepper to taste</li>
-            </ul>
+           <ul class="ingredients_list">
+            ${data.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+          </ul>
           </div>
         </div>
         <div class="instructions">
           <h2>Instructions:</h2>
           <ol class="instructions_list">
-            <li>Preheat the oven to 475°F (245°C).</li>
-            <li>Roll out the pizza dough and spread tomato sauce evenly.</li>
-            <li>Top with slices of fresh mozzarella and fresh basil leaves.</li>
-            <li>Drizzle with olive oil and season with salt and pepper.</li>
-            <li>Bake in the preheated oven for 12-15 minutes or until the crust is golden brown.</li>
-            <li>Slice and serve hot.</li>
+          ${data.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
           </ol>
         </div>
     `;
   });
+
+
 
