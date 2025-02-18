@@ -266,9 +266,8 @@
 .card_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2%;
+  gap: 10px;
   margin-top: 7%;
-  margin-bottom: 2.6%;
 }
 
 .card_grid img {
@@ -603,9 +602,8 @@
   .card_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1%;
+    gap: 10px;
     margin-top: 2%;
-    margin-bottom: 0%;
   }
 
   .popular_recipes {
