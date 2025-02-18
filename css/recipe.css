@@ -8,6 +8,9 @@
   margin-bottom: 2%;
 }
 
+a:link {
+  text-decoration: none;
+}
 .recipe_list {
   list-style-type: none;
   display: flex;
