@@ -119,10 +119,6 @@ main {
 }
 
 @media (min-width: 700px) {
-  .menupunkter {
-    gap: 5%;
-    font-size: 100%;
-  }
   body,
   html {
     margin: 0;
