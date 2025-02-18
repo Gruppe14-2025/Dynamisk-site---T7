@@ -6,6 +6,7 @@
     <title>Cravory</title>
     <link rel="stylesheet" href="base/base.css" />
     <link rel="stylesheet" href="css/about_us.css" />
+    <link rel="stylesheet" href="base/footer.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
@@ -58,6 +59,39 @@
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer_content">
+        <div class="f_left">
+          <h2>Contact us:</h2>
+          <p>Mail: Cravory@gmail.com</p>
+          <p>Phone: xx xx xx xx</p>
+        </div>
+
+        <div class="f_mid">
+          <div class="f_logo">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+          <div class="f_icon">
+            <img class="s_icon" src="./img/fbicon.png" alt="Facebook ikon" />
+            <img class="s_icon" src="./img/igicon.png" alt="Instagram ikon" />
+            <img class="s_icon" src="./img/picon.png" alt="Pinterest ikon" />
+          </div>
+        </div>
+
+        <div class="f_right">
+          <h2>Never miss a new recipe</h2>
+          <p>Subscribe now!</p>
+          <form action="submit_form.php" method="POST">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email address"
+              required
+            />
+            <button type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
