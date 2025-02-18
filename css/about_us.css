@@ -5,30 +5,6 @@ main {
   background-color: #fefcdd;
 }
 
-.menupunkt {
-  color: white;
-  text-decoration: none;
-}
-
-.menupunkter {
-  list-style-type: none;
-  display: flex;
-  justify-content: left;
-  gap: 13%;
-  font-family: "Inter";
-  font-weight: 300;
-  padding-left: 10%;
-  line-height: 20%;
-  font-size: 85%;
-}
-
-.menulinje {
-  position: absolute;
-  width: 100%;
-  background-color: #b29f4e;
-  padding: 0;
-  margin: 0;
-}
 /* Grid Container - Større layout */
 .grid-container {
   display: grid;
@@ -209,7 +185,7 @@ main {
     grid-template-rows: 1fr 1fr;
     gap: 15px;
     width: 700px;
-    height: 1000px;
+    height: 850px;
     margin-left: -11%;
     margin-top: 4.7%;
     order: 1; /* Flytter grid-container til venstre */
