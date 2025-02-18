@@ -11,7 +11,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 12px;
-  width: 450px; /* Større bredde */
+  width: 100%; /* Større bredde */
   height: 600px; /* Større højde */
   font-family: "Inter", sans-serif;
   font-weight: 900;
@@ -91,22 +91,25 @@ main {
 }
 
 .text-container {
-  max-width: 400px; /* Begrænser bredden, så teksten bliver smal */
+  max-width: 100%; /* Begrænser bredden, så teksten bliver smal */
   margin: 0;
   text-align: left; /* Holder teksten venstrejusteret */
   line-height: 1.6; /* Gør teksten mere læsbar */
-  font-size: 12px; /* Lidt større skrift */
+  font-size: 15px; /* Lidt større skrift */
   font-family: "Inter", sans-serif;
   color: #3e2b1b; /* Mørk brun farve for bedre kontrast */
-  padding: 20px;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 10%;
   font-weight: 200;
 }
 .overskrift {
   font-family: "Bungee", sans-serif;
-  font-size: 30px;
+  font-size: 250%;
   color: #b6391c;
   margin-top: 15%;
-  margin-bottom: 1px;
+  margin-bottom: 1%;
+  margin-left: 4%;
   text-align: left;
 }
 /* Tekst og overskrift er i højre side */
@@ -128,12 +131,12 @@ main {
   }
 
   /* Bytter om på rækkefølgen: tekst til højre, kasser til venstre */
-  main {
+  .grid_container {
     display: grid;
-    grid-template-columns: 1.2fr 1fr; /* 1.2fr = tekst, 1fr = kasser */
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
-    align-items: start;
-    width: 90vw;
+
+    width: 100%;
     margin: 0 auto;
     padding: 0;
   }
@@ -154,16 +157,16 @@ main {
     font-family: "Bungee", sans-serif;
     font-size: 90px;
     color: #b6391c;
-    margin-top: 25%;
+    margin-top: 20%;
     margin-bottom: 5%;
     text-align: left;
-    margin-left: -50%;
+    margin-left: -32%;
     z-index: 20;
   }
 
   /* Tekst-container */
   .text-container {
-    max-width: 600px;
+    max-width: 100%;
     text-align: left;
     font-size: 20px;
     font-weight: 200;
@@ -179,12 +182,11 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 15px;
-    width: 700px;
-    height: 850px;
-    margin-left: -11%;
+    gap: 10px;
+    width: 100%;
+    height: 900px;
     margin-top: 4.7%;
-    order: 1; /* Flytter grid-container til venstre */
+
     font-family: "Inter", sans-serif;
     font-weight: 900;
     text-transform: none;
