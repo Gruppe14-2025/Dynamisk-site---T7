@@ -1,33 +1,39 @@
+
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
+    /* height: 100vh; */
 }
 
 /* Hero Section */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
+    display: grid;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 2fr;
 }
 
 /* Text Section */
 .text-content {
-    width: 45%;
     font-family: 'Inter';
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 100%;
+   text-align: center;
+   padding: 5%;
+
+
 }
 
 .text-content h1 {
     font-size: 16rem;
     color: #A24820;
     font-weight: bold;
-    margin-top: -22%;
-    z-index: +1;
+    z-index: 50;
+    outline: solid 2px orange;
 }
 
 .text-content p {
@@ -40,14 +46,14 @@ html, body {
 
 /* Button */
 .btn {
-    display: inline-block;
     background-color: #FFF;
     color: #215123;
-    padding: 12px 24px;
     text-decoration: none;
     border: 2px solid #215123;
     font-weight: bold;
-    margin-top: 10px;
+    display: inline block;
+    padding: 2%;
+
 }
 
 .btn:hover {
@@ -57,12 +63,8 @@ html, body {
 
 /* Image Section */
 .image-content {
-    width: 50vw;
-    height: 100vh;
-    overflow: hidden;
-    position: fixed; /* Changed from absolute */
-    left: 50%;
-    margin-top: -0.7%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
 }
 
 .image-content img {
@@ -73,65 +75,62 @@ html, body {
 
 /* Cravory Title */
 .cravory-title {
-    font-size: 10rem;
+    font-size: 19vw;
     font-weight: bold;
     color: #693B1E;
-    text-align: center;
-    position: fixed; /* Removed absolute positioning */
-    left: 7%;
-    transform: none;
     font-family: 'Bungee';
-    transform: scaleX(1.1); /* Stretches the text horizontally */
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    z-index: 5;
+    /* object-fit: cover; */
+    height: 100%;
+    margin: 0%;
+    justify-self: center;
+    margin-top: 50px;
+
 
 }
 
 /* Mobile View (max 769px) */
 @media (max-width: 769px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        height: auto; /* Allow content to expand */
-        padding: 20px;
-    }
+  /* Hero Section */
+  .hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 
-    .image-content {
-        width: 100vw; /* Ensure image spans the full width */
-        height: 50vh; /* Set a smaller height for mobile (50% of the viewport height) */
-        max-height: 300px; /* Keeps the image height from becoming too large */
-        overflow: hidden;
-        position: relative;
-        margin-top: -8%;
-        left: -5%;
-        object-fit: cover;
-    }
+  }
 
-    .image-content img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  .cravory-title{
+    grid-row: span 1;
+    font-size: 4rem;
+    justify-self: center;
+  }
 
-    .text-content {
-        width: 90%;
-        margin: 20px auto;
-    }
+  .image-content{
+    grid-column: 1 / 1;
+    height: 400px;
+    width: 100%;
+  }
 
-    .text-content h1 {
-        font-size: 3.5rem;
-        margin-top: 20px;
-    }
+  .text-content{
+    grid-row: span 1;
+    height: auto;
+    text-align: center;
+  
+  }
 
-    .btn {
-        margin-top: 10px;
-    }
+  .text-content p{
+    width: 100%;
+    font-size: 100%;
 
-    .cravory-title {
-        font-size: 10rem;
-        font-weight: bold;
-        color: #693B1E;
-        text-align: center;
-        position: relative; /* Removed absolute positioning */
-        left: 0%;
-        transform: none;
-    }
+  }
+
+  .btn {
+    background-color: #FFF;
+    color: #215123;
+    text-decoration: none;
+    border: 2px solid #215123;
+    font-weight: bold;
+}
 }
