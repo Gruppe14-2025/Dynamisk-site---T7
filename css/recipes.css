@@ -35,10 +35,8 @@ a {
 .card_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  row-gap: 0.5%;
-  column-gap: 2%;
+  gap: 10px;
   margin-top: 5%;
-  margin-bottom: 15%;
 }
 
 .card_grid img {
@@ -218,8 +216,7 @@ a {
   .card_grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    row-gap: 1%;
-    column-gap: 1%;
+    gap: 10px;
     margin-top: 3%;
   }
 
