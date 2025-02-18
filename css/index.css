@@ -27,7 +27,7 @@ body {
 
 .text-content h1 {
   font-size: 16rem;
-  color: #a24820;
+  color: #b6391c;
   font-weight: bold;
   z-index: 50;
   outline: solid 2px orange;
@@ -73,7 +73,7 @@ body {
 .cravory-title {
   font-size: 19vw;
   font-weight: bold;
-  color: #693b1e;
+  color: #b6391c;
   font-family: "Bungee";
   grid-column: 1 / -1;
   grid-row: 1 / 2;
