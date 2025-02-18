@@ -1,1 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
 
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Text Section */
+.text-content {
+    width: 45%;
+    font-family: 'Inter';
+}
+
+.text-content h1 {
+    font-size: 16rem;
+    color: #A24820;
+    font-weight: bold;
+    margin-top: -22%;
+    z-index: +1;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #444;
+    font-family: 'Inter';
+
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #FFF;
+    color: #215123;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: 2px solid #215123;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #215123;
+    color: white;
+}
+
+/* Image Section */
+.image-content {
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed; /* Changed from absolute */
+    left: 50%;
+    margin-top: -0.7%;
+}
+
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cravory Title */
+.cravory-title {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #693B1E;
+    text-align: center;
+    position: fixed; /* Removed absolute positioning */
+    left: 7%;
+    transform: none;
+    font-family: 'Bungee';
+    transform: scaleX(1.1); /* Stretches the text horizontally */
+
+}
+
+/* Mobile View (max 769px) */
+@media (max-width: 769px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto; /* Allow content to expand */
+        padding: 20px;
+    }
+
+    .image-content {
+        width: 100vw; /* Ensure image spans the full width */
+        height: 50vh; /* Set a smaller height for mobile (50% of the viewport height) */
+        max-height: 300px; /* Keeps the image height from becoming too large */
+        overflow: hidden;
+        position: relative;
+        margin-top: -8%;
+        left: -5%;
+        object-fit: cover;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .text-content {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .text-content h1 {
+        font-size: 3.5rem;
+        margin-top: 20px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .cravory-title {
+        font-size: 10rem;
+        font-weight: bold;
+        color: #693B1E;
+        text-align: center;
+        position: relative; /* Removed absolute positioning */
+        left: 0%;
+        transform: none;
+    }
+}
