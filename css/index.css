@@ -39,6 +39,7 @@ body {
   color: #444;
   font-family: "Inter";
   margin-top: 10%;
+  font-weight: 200;
 }
 
 /* Button */
@@ -46,8 +47,8 @@ body {
   background-color: #fff;
   color: #215123;
   text-decoration: none;
-  border: 2px solid #215123;
-  font-weight: bold;
+  border: 2px solid #b29f4e;
+  font-weight: 850;
   display: inline block;
   padding: 2%;
 }
@@ -121,7 +122,7 @@ body {
     background-color: #fff;
     color: #215123;
     text-decoration: none;
-    border: 2px solid #215123;
-    font-weight: bold;
+    border: 2px solid #b29f4e;
+    font-weight: 850;
   }
 }

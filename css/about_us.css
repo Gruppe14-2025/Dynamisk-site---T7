@@ -43,6 +43,7 @@ main {
   background-color: #ff6b3d;
   color: #ba241e;
   justify-content: left;
+  align-items: end;
   text-transform: none;
   font-weight: 900;
   font-size: 220%;
@@ -51,7 +52,7 @@ main {
 .dessert {
   background-color: #3e2b1b;
   color: #e7dac4;
-  align-items: end;
+
   text-transform: none;
   font-weight: 900;
   font-size: 220%;
@@ -60,7 +61,7 @@ main {
 .lunch {
   background-color: #ba241e;
   color: #ff6b3d;
-  justify-content: right;
+  justify-content: left;
   align-items: end;
   text-transform: none;
   font-weight: 900;
