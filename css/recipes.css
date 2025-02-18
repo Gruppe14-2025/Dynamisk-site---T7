@@ -23,7 +23,7 @@ a {
   text-align: center;
   gap: 5%;
   font-family: "Inter";
-  font-weight: 300;
+  font-weight: 200;
   line-height: 200%;
   font-size: 100%;
   padding-left: 0;
@@ -209,8 +209,8 @@ a {
 
   .category_list {
     gap: 5%;
-    font-size: 120%;
-    font-weight: 250;
+    font-size: 20px;
+    font-weight: 200;
   }
 
   .card_grid {

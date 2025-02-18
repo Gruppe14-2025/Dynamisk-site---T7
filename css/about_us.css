@@ -96,7 +96,7 @@ main {
   margin: 0;
   text-align: left; /* Holder teksten venstrejusteret */
   line-height: 1.6; /* Gør teksten mere læsbar */
-  font-size: 15px; /* Lidt større skrift */
+  font-size: 16px; /* Lidt større skrift */
   font-family: "Inter", sans-serif;
   color: #3e2b1b; /* Mørk brun farve for bedre kontrast */
   padding-left: 10%;

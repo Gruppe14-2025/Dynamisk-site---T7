@@ -34,7 +34,7 @@ body {
 }
 
 .text-content p {
-  font-size: 1.2rem;
+  font-size: 20px;
   line-height: 1.5;
   color: #444;
   font-family: "Inter";
@@ -51,6 +51,7 @@ body {
   font-weight: 850;
   display: inline block;
   padding: 2%;
+  font-size: 20px;
 }
 
 .btn:hover {
@@ -115,7 +116,7 @@ body {
 
   .text-content p {
     width: 100%;
-    font-size: 100%;
+    font-size: 16px;
   }
 
   .btn {
@@ -124,5 +125,6 @@ body {
     text-decoration: none;
     border: 2px solid #b29f4e;
     font-weight: 850;
+    font-size: 16px;
   }
 }
